@@ -2,6 +2,8 @@ FROM python:3.7
 
 RUN pip install Flask gunicorn firebase-admin
 
+LABEL maintainer="darthnater007"
+
 COPY src/ /app
 WORKDIR /app
 
