@@ -18,13 +18,16 @@
 			
 			<div class="border border-white bg-dark rounded-pill mb-2 p-2">
 				<p class="text-white">Current Phrase:</p>
-				<p class="bg-light ml-1 text-left">Nate is cooler than you are.</p>
+				<p class="bg-light ml-1 text-left">{{current_phrase}}</p>
 			</div>
 
 			<div class="border border-white bg-dark rounded-pill mb-2 p-2">
 				<p class="text-white mt-2 mb-2">Enter a new phrase:</p>
-				<input type="text" placeholder="type new phrase here and hit submit" class="container bg-light"> <br>
-				<button type="button" class="btn btn-lg btn-success text-white m-3">Submit</button>
+
+				<form action="/updatephrase" method="post">
+					<input type="text" name="new_phrase_field" placeholder="type new phrase here and hit submit" class="container bg-light"> <br>
+					<input type="submit" value="Submit"  class="btn btn-lg btn-success text-white m-3"></input>
+				</form>
 			</div>
 		</div>
 
@@ -65,6 +68,7 @@
 					This project is open source. Steal as much of it as you'd like.
 				</small>
 			</div>
+
 		</footer>
 
 		
