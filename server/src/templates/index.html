@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>UAT Phrase Entry</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+
+	<body class="full-screen flex-center bg-secondary">
+		<header class="jumbotron border-bottom border-white rounded-0 bg-dark">
+			<h1 class="text-xl text-white">Ultrasonic Audio Trigger:</h1>
+			<h3 class="text-white">Phrase Entry Interface</h3>
+		</header>
+
+		<div class="container text-center">	
+			
+			<div class="border border-white bg-dark rounded-pill mb-2 p-2">
+				<p class="text-white">Current Phrase:</p>
+				<p class="bg-light ml-1 text-left">Nate is cooler than you are.</p>
+			</div>
+
+			<div class="border border-white bg-dark rounded-pill mb-2 p-2">
+				<p class="text-white mt-2 mb-2">Enter a new phrase:</p>
+				<input type="text" placeholder="type new phrase here and hit submit" class="container bg-light"> <br>
+				<button type="button" class="btn btn-lg btn-success text-white m-3">Submit</button>
+			</div>
+		</div>
+
+		<footer class="page-footer border-top border-white rounded-0 bg-dark">
+			<div class="row">
+
+					<div class="col-md-6 mt-md-0 mt-3 text-white text-center">
+						<h6><u>What is this place?</u></h6>
+						<p class="footer_text text-secondary">
+							<small>
+								This site is a front end componenet for the Ultrasonic Audio Trigger device.  When the device detects an object closer than
+								30 cm, it calls a Google Text-To-Speech Library to play the 'current phrase' you see above, thereby startling an unexpecting coworker.
+							</small>
+						</p>
+					</div>
+
+					<div class="col-md-6 mt-md-0 mt-3 text-white text-center">
+							<h6><u>Links</u></h6>
+							<ul class="list-unstyled">
+								<li>
+									<small>
+										<a class="text-info" href="https://github.com/darthnater007/Ultrasonic_Audio_Trigger-FE">- This site's Code</a>
+									</small>
+									</li>
+								<li>
+									<small>
+										<a class="text-info" href="https://github.com/darthnater007/Ultrasonic-Audio-Trigger">- Code that runs the device</a>
+									</small>
+								</li>
+							</ul>
+					</div>
+
+			</div>
+			<div class="footer-copyright text-center py-3 text-secondary">
+				<small>
+					Author:
+						<a class="text-info" href="https://github.com/darthnater007/">darthnater007</a><br>
+					This project is open source. Steal as much of it as you'd like.
+				</small>
+			</div>
+		</footer>
+
+		
+	</body>
+</html>
